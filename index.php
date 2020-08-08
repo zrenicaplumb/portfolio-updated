@@ -95,16 +95,16 @@
 
 			<div class="about-div">
 				<a name="about"><h2>About</h2></a>
-				<p>I am an aspiring Web Designer and Developer, with a B.S. in Web Design and Development with an emphasis in application development from UVU.
-                                                                 I thoroughly enjoy coding and learning about all things web-related. I have 2 years experience programming with Javascript and 1 year of experience with ReactJS framework.</p>
+				<p>I am an aspiring web developer, with a B.S. in web design and development with an emphasis in application development from UVU.
+                                                                 I started coding in early 2015.</p>
 				<p>
-                                                                                  I worked for Utah Valley University for over a year as an Area Support Web Developer before leaving to backpack Europe for several months.
+                                                                                  I first worked as a web developer for Utah Valley University for over a year before leaving to backpack Europe for several months.
                                                                                    At UVU I helped maintain, redesign, and rebuild web pages for the College of Humanities and Social Sciences (CHSS) and affiliated sites. 
                                                                                    </p>
                                                                                    <p>
-                                                                                                I next worked at Aptivada, a company that creates online advertising tools used by 70% of the radio stations in the U.S.
+																						I next worked at Aptivada, a company that creates online advertising tools used by 70% of the radio stations in the U.S.
                                                                                    </p>
-				<p>When i'm not working on web stuff, my passion is composing classical and soundtrack piano pieces. Music is life. 
+				<p>When i'm not working on web stuff, my passion is composing classical and soundtrack piano pieces.
                                                                                 You can listen to my piano pieces on any music streaming platform @ <a href="https://soundcloud.com/william-plumb">William Ryan Plumb.</a></p>
                                 
                                                                                                 
