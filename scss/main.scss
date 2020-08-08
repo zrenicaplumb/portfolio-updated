@@ -1,0 +1,19 @@
+
+
+
+
+
+@import '../css/reset.css';
+@import 'partials/variables.scss';
+@import 'partials/mixins.scss';
+
+@import 'partials/desktop.scss';
+
+@media only screen and (max-width: 1140px){
+	@import 'partials/tablet.scss';
+}
+
+@media only screen and (max-width: 600px){
+	@import 'partials/phone.scss';
+}
+

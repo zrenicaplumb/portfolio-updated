@@ -1,0 +1,216 @@
+@import url(../css/reset.css);
+html {
+  -webkit-text-size-adjust: none; }
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/*-----Prevents iPhone from resizing in landscape mode -----*/
+body {
+  font-family: 'Lato', sans-serif; }
+  body header {
+    overflow: auto;
+    width: 100%;
+    text-align: center; }
+    body header img {
+      display: block;
+      margin: auto;
+      width: 80px;
+      margin-top: 20px; }
+    body header nav {
+      margin-top: 100px;
+      display: inline-block; }
+      body header nav ul {
+        padding-bottom: 15px;
+        border-bottom: 2px solid #fff;
+        text-align: center; }
+        body header nav ul li {
+          display: inline;
+          margin: 40px; }
+          body header nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.8em;
+            color: #fff;
+            text-shadow: 0 0 6px black;
+            padding: 10px; }
+            body header nav ul li a:hover {
+              transition: color .35s;
+              color: #D5FFA1;
+              padding: 10px; }
+  body .wrap {
+    background: url(../img/landscape2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: auto;
+    background-attachment: fixed; }
+    body .wrap .content {
+      margin-top: 100px; }
+      body .wrap .content .greeting-text {
+        color: #fff;
+        text-shadow: 0 0 8px black;
+        font-size: 3.5em;
+        clear: both;
+        text-align: center; }
+        body .wrap .content .greeting-text p span {
+          font-size: 1.6em; }
+    body .wrap .work-div {
+      background: #fff;
+      padding: 5px;
+      text-align: center;
+      margin-top: 190px;
+      float: left;
+      padding-bottom: 40px;
+      box-shadow: 30px 3px 30px black; }
+      body .wrap .work-div h2 {
+        font-size: 2em;
+        padding-bottom: 10px;
+        padding-top: 30px; }
+      body .wrap .work-div .row img {
+        width: 31%;
+        margin: 1%;
+        border: 1px solid black;
+        margin-top: 50px; }
+        body .wrap .work-div .UVU a{
+          
+          display: block;
+    color: black;
+    text-decoration: none;
+    padding: 5px 0;
+    width: 300px;
+    margin: auto;
+        }
+        body .wrap .work-div .UVU a:hover{
+          background-color:#D5FFA1;
+        }
+    body .wrap .about-div {
+      background: url(../img/space.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      padding: 10px;
+      clear: both;
+      margin-top: 190px;
+      z-index: 10000; }
+      body .wrap .about-div h2 {
+        text-align: center;
+        color: #fff;
+        font-size: 2em;
+        margin-top: 40px;
+        margin-bottom: 40px; }
+      body .wrap .about-div p {
+        color: #fff;
+        font-size: 1.5em;
+        text-shadow: 0 0 6px black;
+        width: 80%;
+        word-spacing: 2px;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding-bottom: 30px; }
+    body .wrap .bottom-div {
+      padding: 50px;
+      text-align: center;
+      background: #fff;
+      box-shadow: 0px 0px 31px black; }
+      body .wrap .bottom-div h2 {
+        font-size: 2.2em;
+        margin-bottom: 30px; }
+      body .wrap .bottom-div .contact-boxes input {
+        clear: both;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 60%;
+        height: 40px;
+        font-size: 1.5em;
+        text-indent: 5px; }
+      body .wrap .bottom-div .contact-boxes textarea {
+        clear: both;
+        display: block;
+        margin: auto;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: 60%;
+        height: 260px;
+        font-size: 1.5em;
+        text-indent: 5px; }
+        body .wrap .bottom-div form .button{
+              padding: 10px 115px;
+    background: #64BBDB;
+    display: inline-block;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 20px;
+    text-decoration: none;
+    cursor: pointer;
+        }
+    body .wrap footer {
+      background: #fff;
+      text-align: center; }
+      body .wrap footer .social-links {
+        margin-bottom: 20px; }
+        body .wrap footer .social-links li {
+          display: inline-block; }
+        body .wrap footer .social-links img {
+          width: 40px;
+          padding: 10px; }
+
+.error {
+  border: 1px solid #BF0200;
+  box-shadow: 0px 0px 3px #BF0200; }
+
+.nameWarning {
+  color: #BF0200;
+  float: left;
+  display: inline; }
+
+@media only screen and (max-width: 1140px) {
+  body .wrap .content .greeting-text p {
+    font-size: .85em; }
+  body .wrap .work-div .row a img {
+    width: 47%; }
+  body .wrap .about-div p {
+    width: 90%; }
+  body .wrap .bottom-div {
+    padding-left: 0px;
+    padding-right: 0px; }
+  body .greeting-text p {
+    font-size: .95em; } }
+@media only screen and (max-width: 600px) {
+  body .wrap header nav {
+    width: 90%;
+    margin-top: 30px; }
+    body .wrap header nav ul li {
+      display: block; }
+      body .wrap header nav ul li a {
+        font-size: 2.8em; }
+  body .wrap .content .greeting-text {
+    padding: 3px; }
+    body .wrap .content .greeting-text p {
+      font-size: .70em; }
+  body .wrap .work-div h2 {
+    font-size: 3em; }
+  body .wrap .work-div .row a img {
+    width: 95%; }
+  body .wrap .about-div {
+    text-align: center; }
+    body .wrap .about-div h2 {
+      font-size: 3em; }
+    body .wrap .about-div p {
+      width: 90%; }
+  body .wrap .bottom-div {
+    padding-left: 0px;
+    padding-right: 0px; }
+    body .wrap .bottom-div h2 {
+      font-size: 3em; }
+    body .wrap .bottom-div .contact-boxes input {
+      width: 90%; }
+    body .wrap .bottom-div .contact-boxes textarea {
+      width: 90%; } }
+
+/*# sourceMappingURL=main.css.map */
