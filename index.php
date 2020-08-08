@@ -1,36 +1,36 @@
 <?php 
-                if (isset($_POST['submit'])) {
+	if (isset($_POST['submit'])) {
 
-                                function sanitize_email($field) {
-                                                $field = filter_var($field, FILTER_SANITIZE_EMAIL);
-                                                if (filter_var($field, FILTER_VALIDATE_EMAIL)) {
-                                                                return true;
-                                                } else {
-                                                                return false;
-                                                }
-                                }
+		function sanitize_email($field) {
+			$field = filter_var($field, FILTER_SANITIZE_EMAIL);
+			if (filter_var($field, FILTER_VALIDATE_EMAIL)) {
+				return true;
+			} else {
+				return false;
+			}
+		}
 
-                                $name = $_POST['name'];
-                                $email = $_POST['email'];
-                                $message = $_POST['message'];
-                                $to = 'zrenicaplumb@gmail.com';
-                                $subject = 'Someone viewed your portfolio site.';
-                                $secure_check = sanitize_email($email);
+		$name = $_POST['name'];
+		$email = $_POST['email'];
+		$message = $_POST['message'];
+		$to = 'zrenicaplumb@gmail.com';
+		$subject = 'Someone viewed your portfolio site.';
+		$secure_check = sanitize_email($email);
 
-                                if ($secure_check == false) {
-                                                echo "Invalid input";
-                                } else {
-                                                error_log('send email');
-                                                $mail = mail($to, $subject, $message, 'FROM: ' . $email);
-                                                if($mail){
-                                                                error_log($mail);
-                                                                error_log('sent');
-                                                }
-                                                else{
-                                                                error_log('not sent');
-                                                }
-                                }
-                }
+		if ($secure_check == false) {
+			echo "Invalid input";
+		} else {
+			error_log('send email');
+			$mail = mail($to, $subject, $message, 'FROM: ' . $email);
+			if($mail){
+				error_log($mail);
+				error_log('sent');
+			}
+			else{
+				error_log('not sent');
+			}
+		}
+	}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -98,18 +98,17 @@
 				<p>I am an aspiring web developer, with a B.S. in web design and development with an emphasis in application development from UVU.
                                                                  I started coding in early 2015.</p>
 				<p>
-                                                                                  I first worked as a web developer for Utah Valley University for over a year before leaving to backpack Europe for several months.
-                                                                                   At UVU I helped maintain, redesign, and rebuild web pages for the College of Humanities and Social Sciences (CHSS) and affiliated sites. 
-                                                                                   </p>
-                                                                                   <p>
-																						I next worked at Aptivada, a company that creates online advertising tools used by 70% of the radio stations in the U.S.
-                                                                                   </p>
+					I first worked as a web developer for Utah Valley University for over a year before leaving to backpack Europe for several months.
+					At UVU I helped maintain, redesign, and rebuild web pages for the College of Humanities and Social Sciences (CHSS) and affiliated sites. 
+				</p>
+				<p>
+					I next worked at Aptivada, a company that creates online advertising tools used by 70% of the radio stations in the U.S.
+				</p>
 				<p>When i'm not working on web stuff, my passion is composing classical and soundtrack piano pieces.
-                                                                                You can listen to my piano pieces on any music streaming platform @ <a href="https://soundcloud.com/william-plumb">William Ryan Plumb.</a></p>
-                                
-                                                                                                
-			</div>
-
+					You can listen to my piano pieces on any music streaming platform @ <a href="https://soundcloud.com/william-plumb">William Ryan Plumb.</a></p>
+                                  
+                                                                                                  
+			</div> 
 
 			<div class="bottom-div">
 				<a name="contact"><h2>Contact me</h2></a>
@@ -134,6 +133,6 @@
 			</footer>
 		</div>
 
-
+																					
 	</body>
 </html>
